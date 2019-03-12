@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_makanan"
+        android:icon="@drawable/ic_pool_black_24dp"
+        android:title="@string/wisata" />
+
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/ic_star_border_black_24dp"
+        android:title="@string/favorite" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_perm_identity_black_24dp"
+        android:title="@string/profile" />
+
+</menu>
