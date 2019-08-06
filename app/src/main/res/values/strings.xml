@@ -13,4 +13,7 @@
     <string name="gender_male">Male</string>
     <string name="gender_female">Female</string>
     <string name="wisata">Wisata</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="kelola_wisata">Kelola Wisata</string>
 </resources>

@@ -49,7 +49,6 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
         progressDialog.setMessage("Loading ...");
         progressDialog.setCancelable(false);
         progressDialog.show();
-
     }
 
     @Override
@@ -74,6 +73,7 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
         mloginData.setLevel(loginData.getLevel());
 
         startActivity(new Intent(this, MainActivity.class).putExtra(Constant.KEY_LOGIN, mloginData));
+
         finish();
     }
 
@@ -111,3 +111,4 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
         }
     }
 }
+

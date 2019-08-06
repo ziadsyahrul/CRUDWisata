@@ -36,4 +36,5 @@ public class LoginResponse {
     public void setData(LoginData loginData) {
         this.Data = Data;
     }
+
 }

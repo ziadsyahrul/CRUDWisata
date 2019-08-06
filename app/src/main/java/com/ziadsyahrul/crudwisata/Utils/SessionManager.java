@@ -16,7 +16,8 @@ public class SessionManager {
     public SessionManager(Context context) {
         this.context = context;
         // Membuat object shared preference untuk siap digunakan
-        pref = context.getSharedPreferences(Constant.pref_name, 0);
+        pref
+                = context.getSharedPreferences(Constant.pref_name, 0);
         // Membuat SharedPreference dengan mode edit
         editor = pref.edit();
     }

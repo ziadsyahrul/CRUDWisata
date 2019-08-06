@@ -15,6 +15,7 @@ import com.ziadsyahrul.crudwisata.UI.favorite.FavoriteFragment;
 import com.ziadsyahrul.crudwisata.UI.profile.ProfileFragment;
 import com.ziadsyahrul.crudwisata.UI.profile.ProfilePresenter;
 import com.ziadsyahrul.crudwisata.UI.wisata.WisataFragment;
+import com.ziadsyahrul.crudwisata.UI.wisatabyuser.WisataByUserFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(wisataFragment);
                     return true;
                 case R.id.navigation_favorite:
-                    FavoriteFragment favoriteFragment = new FavoriteFragment();
-                    loadFragment(favoriteFragment);
+                    WisataByUserFragment wisataByUserFragment = new WisataByUserFragment();
+                    loadFragment(wisataByUserFragment);
                     return true;
                 case R.id.navigation_profile:
                     ProfileFragment profileFragment = new ProfileFragment();
@@ -53,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        WisataFragment wisataFragment = new WisataFragment();
+        loadFragment(wisataFragment);
     }
 
     @Override
